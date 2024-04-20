@@ -1,0 +1,825 @@
+body{
+    font-family: Poppins;
+}
+
+main{
+    overflow-x: hidden;
+}
+
+.encabezado{
+    background:linear-gradient(45deg, #5252ae70, #a6abe86d, #4548937e);
+    backdrop-filter:blur(9px);
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    padding: 1em 1em;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    box-shadow: 0px -5px 25px 0 rgba(0, 0, 0, 0.732);
+}
+
+.contenedorEncabezado{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+}
+
+.contenedorTitulo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.imagenPerfil{
+    width: 20px;
+}
+
+.tituloh1, .contenedorDeApartados{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 350;
+}
+
+.primeraPalabraH1{
+    font-weight: 600;
+}
+
+.contenedorDeApartados{
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+    transition: transform 0.3s ease;
+}
+
+.contenedorDeApartados.active .line:first-child {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.contenedorDeApartados.active .line:nth-child(2) {
+    opacity: 0;
+}
+
+.contenedorDeApartados.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.menu {
+    display: none;
+    width: 120px;
+    text-align: right;
+    position: absolute;
+    right: 5px;
+    z-index: 9;
+    background: #a3a3a3;
+    padding: 8px;
+    border-radius: 10%;
+}
+
+.contenedorDeApartados.active .menu {
+    display: block;
+}
+
+.menuSecciones{
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    padding: 5px 0;
+    font-weight: 400;
+    justify-content: end;
+}
+
+.menuSecciones:hover{
+    color: #ffffff;
+}
+
+.ContenedorDeSecciones:nth-child(1){
+    margin-top: 100px;
+}
+
+.ContenedorDeSecciones{
+    height: max-content;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.tituloSecciones{
+    font-size: 50px;
+    font-weight: 750;
+    text-align: center;
+    padding: 2em 0 0 0;
+    font-family: Pacifico;
+}
+
+.contenedorPresentacion{
+    height:fit-content;
+}
+
+
+.contenedorTextoPresentacion{
+    width: 70%;
+}
+
+.tituloPrincipal{
+    font-size: 35px;
+    font-weight: 700 ;
+}
+
+.descripcionPrincipal{
+    width: 40%;
+    font-size: 13px;
+    opacity: 0.75;
+}
+
+.contenedorImagenPrincipal{
+    position: relative;
+}
+
+.imagenPrincipal{
+    position: absolute;
+    width: 300px;
+    top: -265%;
+    right: -80px;
+}
+
+.tituloImagenPrincipal{
+    font-size: 60px;
+    font-weight: 1000;
+    position: relative;
+    top: 90px;
+    text-align: center;
+}
+
+.datosPrincipales{
+    position: relative;
+    top: 95px;
+    text-transform: uppercase;
+    font-size: 12px;
+    opacity: 0.75;
+    text-align: center;
+}
+
+.redesSociales{
+    margin-top: 8em;
+    position: relative;
+}
+
+.listaRedesSociales{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    font-size: 12px;
+    font-weight: 500;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.itemsRedesSociales{
+    text-decoration: none;
+    padding: 0.3em 0.8em;
+    background: #000;
+    border-radius: 50px;
+    color: #fff;
+}
+
+.primeraParteSobreMi{
+    width: 100%;
+    padding: 0 0 3em 0;
+}
+
+.primeraDescripcion{
+    font-size: 20px;
+    padding-top: 50px;
+    font-weight: 600;
+}
+
+.primeraDescripcion02{
+    font-size: 15px;
+    padding-top: 20px;
+    font-weight: 400;
+}
+
+.imagenConGimbal{
+    width: 250px;
+    position: absolute;
+    right: 0;
+    opacity: 0.4;
+    z-index: 0;
+}
+
+.imagenSentado{
+    width: 250px;
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+}
+
+.segundaDescripcion{
+    text-align:right;
+    padding-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.segundaDescripcion02, .segundaDescripcion03{
+    text-align: right;
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.contenedorSkills{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.itemsSkills{
+    background:#00000011;
+    backdrop-filter:blur(15px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    padding: 1em 1em;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.imgSkills{
+    width: 70px;
+}
+
+.titulosSkills{
+    margin-top: 8px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.descriptionItems{
+    font-size: 8px;
+    font-weight: 300;
+    text-align: center;
+    width: 100%;
+}
+
+.itemsProyectos{
+    background:#00000011;
+    backdrop-filter:blur(15px);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 1em;
+    text-transform: uppercase;
+}
+
+.imgProyectos{
+    width: 200px;
+}
+
+.tituloProyecto{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.descripcionProyecto{
+    font-size: 12px;
+    color: #505050;
+    text-align:center;
+}
+
+.contenedorBotonesProyectos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.botonesProyectos{
+    width: 85%;
+    background: #526090;
+    border-radius: 8px;
+    padding: 0.75em;
+    color: #ffffff;
+    text-align:center;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenedorForm{
+    margin-top: 2em;
+    background:#00000011;
+    backdrop-filter:blur(15px);
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1em;
+    border-radius: 20px;
+}
+
+.contenedorCampoNombre{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.titulosForm{
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 0.75em 0;
+    opacity: 0.6;
+    text-align: center;
+}
+
+.inputsForm{
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-width: 2px;
+    border-color: #000;
+    font-size: 20px;
+    font-weight: 300;
+    outline: none;
+    font-family: Poppins;
+    width: 90%;
+}
+
+.contenedorCampoMensaje{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.textareaForm{
+    background: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 1em;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: Poppins;
+}
+
+.inputEnviar{
+    margin-top: 1em;
+    padding: 0.3em 0;
+    border-radius: 10px;
+    border: none;
+    background: #526090;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.contenedorAlerta{
+    margin-top: 5%;
+    display: none;
+    position: fixed;
+    background: #17171786;
+    backdrop-filter: blur(3px);
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.alerta{
+    text-align: center;
+}
+
+.tituloAlerta{
+    font-size: 24px;
+    font-weight: 600;
+    text-indent: 10px;
+}
+
+.cerrarAlerta{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+footer{
+    margin-top: 2em;
+    background: #000;
+    color: #fff;
+    padding: 1em;
+    font-size: 15px;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px){
+    .imagenPerfil{
+        width: 40px;
+    }
+
+    .tituloh1{
+        font-size: 20px;
+    }
+
+    .tituloSecciones{
+        font-size: 80px;
+    }
+
+    .contenedorTextoPresentacion{
+        padding: 8% 0;
+    }
+    
+    .tituloPrincipal{
+        font-size: 50px;
+        width: 100%;
+    }
+    
+    .descripcionPrincipal{
+        width: 60%;
+        font-size: 24px;
+    }
+    
+    .imagenPrincipal{
+        width: 500px;
+        top: -90%;
+        right: -50px;
+    }
+    
+    .tituloImagenPrincipal{
+        font-size: 140px;
+        padding-top: 150px;
+    }
+    
+    .datosPrincipales{
+        font-size: 25px;
+    }
+    
+    .redesSociales{
+        margin-top: 8em;
+    }
+    
+    .listaRedesSociales{
+        font-size: 15px;
+    }
+    
+    .primeraDescripcion{
+        font-size: 30px;
+    }
+    
+    .primeraDescripcion02{
+        font-size: 25px;
+    }
+    
+    .imagenConGimbal{
+        width: 330px;
+    }
+    
+    .imagenSentado{
+        width: 330px;
+    }
+    
+    .segundaDescripcion{
+        font-size: 30px;
+    }
+    
+    .segundaDescripcion02, .segundaDescripcion03{
+        font-size: 25px;
+    }
+    
+    .itemsSkills{
+        width: 150px;
+    }
+    
+    .imgSkills{
+        width: 100px;
+    }
+    
+    .titulosSkills{
+        font-size: 20px;
+    }
+
+    .descriptionItems{
+        font-size: 15px;
+    }
+
+    #contenedorProyectos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .itemsProyectos{
+        border-radius: 30px;
+        padding: 2em 0;
+    }
+    
+    .imgProyectos{
+        width: 600px;
+    }
+    
+    .tituloProyecto{
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    .descripcionProyecto{
+        font-size: 20px;
+    }
+
+    .contenedorBotonesProyectos{
+        display:flex;
+        flex-direction:row;
+        width: 80%;
+        justify-content: space-around;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .botonesProyectos{
+        width: 40%;
+        border-radius: 10px;
+        padding: 0.75em;
+        color: #ffffff;
+        font-size: 25px;
+    }
+
+    .titulosForm{
+        text-align: left;
+        width: 90%;
+    }
+
+    .inputEnviar{
+        margin-top: 1em;
+        margin-left: 5%;
+        padding: 0.3em 0;
+        border-radius: 10px;
+        border: none;
+        background: #526090;
+        font-size: 30px;
+        font-weight: 600;
+        color: #fff;
+        text-transform: uppercase;
+        width: 50%;
+    }
+
+    .contenedorAlerta{
+        margin-top: 3%;
+        right: 8%;
+    }
+    
+    .alerta{
+        text-align: center;
+    }
+    
+    .tituloAlerta{
+        font-size: 24px;
+        font-weight: 600;
+        text-indent: 10px;
+    }
+    
+    .cerrarAlerta{
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1080px){
+
+    .encabezado{
+        padding: 1.3em 0;
+    }
+
+    .contenedorEncabezado{
+        width: 80%;
+        height:20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contenedorDeApartados{
+        align-items: center;
+    }
+    
+    .imagenPerfil{
+        width: 30px;
+    }
+    
+    .line {
+        display: none;
+    }
+    
+    .menu {
+        display: flex;
+        width: max-content;
+        background: none;
+        padding: 0px;
+        gap: 14px;
+    }
+
+    .contenedorDeApartados.active .menu {
+        display: flex;
+    }
+    
+    .menuSecciones{
+        font-size: 20px;
+        padding: 0 0;
+    }
+    
+    .ContenedorDeSecciones{
+        height: max-content;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .tituloSecciones{
+        font-size: 70px;
+    }
+
+    .contenedorPresentacion{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .ContenedorDeSecciones:nth-child(1) {
+        margin-top: 80px;
+        width: 77%;
+    }
+
+    .contenedorTextoPresentacion{
+        padding: 0 0;
+        width: 40%;
+    }
+    
+    .tituloPrincipal{
+        font-size: 50px;
+        width: 100%;
+    }
+    
+    .descripcionPrincipal{
+        width: 80%;
+        font-size: 22px;
+    }
+
+    .contenedorImagenPrincipal{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .imagenPrincipal{
+        content: url(../img/presentacion02.png);
+        position: relative;
+        width: 450px;
+        top: 0;
+        right: 0px;
+        margin: 0 auto;
+    }
+    
+    .tituloImagenPrincipal{
+        font-size: 70px;
+        padding-top: 0px;
+        top: -60px;
+    }
+    
+    .datosPrincipales{
+        font-size: 25px;
+        top: -40px;
+    }
+    
+    .redesSociales{
+        margin-top: 2.5em;
+        z-index: 90;
+    }
+    
+    .listaRedesSociales{
+        font-size: 25px;
+    }
+    
+    .primeraDescripcion{
+        font-size: 35px;
+        width: 80%;
+    }
+    
+    .primeraDescripcion02{
+        font-size: 25px;
+        width: 70%;
+    }
+    
+    .imagenConGimbal{
+        width: 600px;
+    }
+    
+    .imagenSentado{
+        width: 550px;
+        top: 110%;
+    }
+
+    .segundaParteSobreMi{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .segundaDescripcion{
+        font-size: 35px;
+        width: 80%;
+        right: 0;
+        margin-left: auto;
+    }
+    
+    .segundaDescripcion02, .segundaDescripcion03{
+        font-size: 25px;
+        width: 70%;
+        margin-left: auto;
+    }
+    
+    .itemsSkills{
+        width: 150px;
+    }
+    
+    .imgSkills{
+        width: 125px;
+    }
+    
+    .titulosSkills{
+        font-size: 20px;
+    }
+
+    .descriptionItems{
+        font-size: 18px;
+    }
+
+    .itemsProyectos{
+        display: flex;
+        flex-direction:unset;
+        border-radius: 50px;
+        padding: 2em 1em;
+    }
+    
+    .imgProyectos{
+        width: 500px;
+    }
+    
+    .infoProyecto{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .tituloProyecto{
+        font-size: 40px;
+    }
+    
+    .descripcionProyecto{
+        font-size: 15px;
+    }
+
+    .contenedorBotonesProyectos{
+        display:flex;
+        flex-direction:row;
+        width: 90%;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    
+    .botonesProyectos{
+        width: 40%;
+        border-radius: 20px;
+    }
+
+    .contenedorForm{
+        box-shadow: 0 0 25px -10px #000000c9;
+    }
+
+    .inputEnviar{
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+        padding: 0.5em 0;
+        border-radius: 25px;
+        width: 40%;
+    }
+}
