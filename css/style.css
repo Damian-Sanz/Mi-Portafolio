@@ -194,6 +194,10 @@ main{
     color: #fff;
 }
 
+.flechaRedesSociales{
+    width: 12px;
+}
+
 .primeraParteSobreMi{
     width: 100%;
     padding: 0 0 3em 0;
@@ -245,25 +249,25 @@ main{
     display: flex;
     flex-direction: column;
     flex-flow: wrap;
-    gap: 20px;
+    gap: 10px;
     width: 100%;
     justify-content: space-around;
 }
 
-.itemsSkills{
+.itemsGenerales{
     background:#00000011;
     backdrop-filter:blur(15px);
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 120px;
+    width: 100px;
     padding: 1em 1em;
     border-radius: 20px;
     text-transform: uppercase;
 }
 
 .imgSkills{
-    width: 70px;
+    width: 60px;
 }
 
 .titulosSkills{
@@ -272,6 +276,7 @@ main{
     display: flex;
     flex-direction: column;
     text-align: center;
+    font-size: 12px;
 }
 
 .descriptionItems{
@@ -299,6 +304,8 @@ main{
 .tituloProyecto{
     font-size: 20px;
     font-weight: 800;
+    text-align: center;
+    width: 100%;
 }
 
 .descripcionProyecto{
@@ -479,6 +486,10 @@ footer{
     .datosPrincipales{
         font-size: 25px;
     }
+
+    .flechaRedesSociales{
+    width: 18px;
+    }
     
     .redesSociales{
         margin-top: 8em;
@@ -512,7 +523,7 @@ footer{
         font-size: 25px;
     }
     
-    .itemsSkills{
+    .itemsGenerales{
         width: 150px;
     }
     
@@ -758,7 +769,7 @@ footer{
         margin-left: auto;
     }
     
-    .itemsSkills{
+    .itemsGenerales{
         width: 150px;
     }
     
